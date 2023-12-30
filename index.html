@@ -1,174 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/Pictogrammers-Material-Black-mesa.512.png" type="image/x-icon">
-    <title>Kauã Lucas</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet"href="./styles/style.css">
+    <title>portifolio</title>
+    
 </head>
-
 <body>
-    <nav>
-        <a class="nav-color" href="#inicio">
-            <h2 class="text-menu">Home</h2>
-        </a>
-        <a class="nav-color" href="#media">
-            <h2 class="text-menu">Aboute me</h2>
-        </a>
-        <a class="nav-color" href="#media-high">
-            <h2 class="text-menu"> Skills</h2>
-        </a>
-        <a class="nav-color" href="#high-max">
-            <h2 class="text-menu">Projects</h2>
-        </a>
-    </nav>
-    <main>
+    <header class="navegacao">
+        <nav class="navegacao__links_nav">
+            <a href="index.html" class="navegacao__links_nav__link" >Home</a>
+            <a href="about.html" class="navegacao__links_nav__link" >Apresentação</a>
+            <span id="navegacao__links_nav_alternado">
+                <a href="curriculo.html" class="navegacao__links_nav__link">Curriculo</a>
+                <a href="APIs.html" class="navegacao__links_nav__link">APIs</a>
+                <a href="Projetos.html" class="navegacao__links_nav__link">Projetos</a>
+            </span>
+        </nav>
+    </header>
+    <main class="apresentacao">
+       <section class="apresentacao__conteudo">
 
-        <!--Home-->
-        <div id="inicio">
-            <section id="texts">
-                <h1 id="name" ><em>
-                    My Name is<br>
-                        Kauã Lucas
-                </em></h1>
-                <p id="desc">
-                    Estou me aventurando no mundo da programação. Estou em busca do máximo de conhecimento possível para me tornar um profissional experiente. Estou comprometido em desenvolver <strong>minhas habilidades</strong> e experiências para me tornar um programador de sucesso.
-                    <br>
-                    <span id="X">Aqui tem o meu <a href="https://www.linkedin.com/in/kaua-lucas-616569268/" target="_blank"rel="external">Linkedin</a> e meu <a href="https://github.com/esmaaisk" target="_blank"rel="external">Github</a></span>
-                </p>
+            <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nivel <strong class="titulo-destaque">com um Front-end de qualidade!!</strong ></h1>
 
-            </section>
-            <aside>
-                <div id="eu-1">
-                    <img id="eu" src="imagens/eu2.png" alt="">
-                </div>
-                <div id="link-G_n">
-                    <h2 style="color:black">Contact</h2>
-                    <div id="link-G">
-                        <div style=" padding-right:2cm;background:#4f567a; border-radius:20px 0px 0px 20px">
-                            <a href="https://github.com/esmaaisk" target="_blank"rel="external">
-                                <img style="height:60px;" src="imagens/github.png" alt="">
-                                <p style="text-align: center;">Github</p>
-                            </a>
-                        </div>
-                        <div style="background:#4f567a;padding-right:0.2cm;border-radius:0px 20px 20px 0px">
-                            <a href="https://www.linkedin.com/in/kaua-lucas-616569268/" target="_blank"rel="external">
-                                <img style="height:60px;" src="imagens/likedin.png" alt="">
-                                <p style="text-align: center;">Linkedin</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </aside>
-        </div>
-        <!-- About me -->
-        <div id="media">
-            <section>
-                <h3>About Me</h3>
-                <div style="display:flex;  margin: 2cm">
+            <p class="apresentacao__conteudo__texto">Olá! Sou <span>Kauã Lucas</span>, desenvolvedor Front-end com especialidade em <strong>React, Html5 e Css3,</strong> ajudo pequenos negócios em pratica boa ideais. vamos conversar?</p>
+       
+            <div class="apresentacao__links">
+                <h2 class="apresentacao__links__text">Acesse minhas redes:</h2>
+
+                <a class="apresentacao__links__link"href="https://instagram.com/kaua_lucas_dias?igshid=MzMyNGUyNmU2YQ==">
+
+                    <img class="apresentacao__links__link__img"src="./assets/instagram.png" alt="imagem do icone do instagram">
+                    Instagram
+                </a>
+
+                <a class="apresentacao__links__link"href="https://github.com/esmaaisk">
                     
-                    <img src="imagens/codding.jpg" id="compt" alt="">
-                    <p id="me"><strong>Tenho 19 anos</strong> e venho estudando programação desde os 16 anos, embora não muito profundamente. Desde 2022, estou me dedicando ao máximo para aperfeiçoar meus conhecimentos.<br>
-                        Eu possuo habilidades <strong>autodidatas</strong> e uma capacidade inata de adaptação ao ambiente em que me encontro. Além disso, tenho aptidão para trabalhar de forma colaborativa em equipe, o que me permite contribuir efetivamente em projetos conjuntos.</p>
-                </div>
-            </section>
-            <!-- média-high -->
+                    <img class="apresentacao__links__link__img"src="./assets/github.png" alt="imagem do icone do github">
+                    Github</a>
+                <a class="apresentacao__links__link"href="https://www.linkedin.com/in/kaua-lucas-616569268/">
+                    
+                    <img class="apresentacao__links__link__img"src="./assets/linkedin.png" alt="icone do twitch">
+                    Linkedin
 
-            <div id="media-high">
-                <h3>Skills</h3>
-                <div id="skils">
-                    <div id="code">
-                        <img class="img-code" src="imagens/icones/logo-html-5-512.png" alt="">
-                        <p  class="linguagens">
-                            Posso criar páginas web estáticas com HTML e também páginas dinâmicas com CSS e JavaScript. Uso tags HTML para estruturar o conteúdo, criar navegação e adicionar imagens, vídeos, tabelas e formulários. Também posso incorporar conteúdo externo na página com HTML e garantir a exibição adequada em diferentes navegadores.
-                        </p>
-                    </div>
 
-                    <div id="code" >
-                        <img class="img-code"  src="imagens/icones/logo-css-3-512.png" alt="">
-                        <p class="linguagens">
-                            Eu posso fazer vários tipos de estilos com o CSS. Por exemplo, posso definir o tamanho, a cor, a fonte, o fundo, o alinhamento, as margens, o espaçamento e a borda de elementos. Posso também criar animações e efeitos usando o CSS. Além disso, posso usar seletores avançados para criar classes e id para aplicar estilos a partes específicas do meu HTML.
-                        </p>
-                    </div>
-
-                    <div id="code" >
-                        <img class="img-code" src="imagens/icones/logo-javascript-512.png" alt="">
-                        <p class="linguagens">
-                            Tenho habilidades para manipular o Document Object Model (DOM) usando JavaScript. Com isso posso usar JavaScript para ocultar e exibir elementos em uma página da web, manipulando suas propriedades de estilo e exibição. Além disso, estou familiarizado com o uso de loops e repetições em JavaScript.
-                        </p>
-                    </div>
-
-                    <div id="code">
-                        <img class="img-code" src="imagens/icones/logo-python-512.png" alt="">
-                        <p class="linguagens">
-                            Com o Python, sou capaz de utilizar suas funcionalidades para diversas finalidades, tais como automação web, criação de gráficos a partir de planilhas do Excel e desenvolvimento de soluções em inteligência artificial. Além disso, possuo um amplo conhecimento no uso de variáveis e arrays, permitindo-me manipular dados de forma eficiente e eficaz.
-                        </p>
-                    </div>
-
-                    <div id="code">
-                        <img class="img-code" src="imagens/icones/logo-php-512.png" alt="">
-                        <p class="linguagens">
-                            Embora ainda esteja aprendendo PHP, já possuo uma sólida base em programação. Estou dedicando meu tempo e esforços para aprimorar meus conhecimentos e habilidades nessa linguagem, visando um crescimento.
-                        </p>
-                    </div>
-
-                    <div id="code">
-                        <img class="img-code" src="imagens/icones/conjunto-windows.png" alt="">
-                        <p class="linguagens">
-                            Eu possuo habilidades intermediárias no uso do Microsoft Excel, Word, PowerPoint e Windows, o que me permite realizar diversas tarefas com facilidade e eficiência. Sou capaz de criar e editar documentos, planilhas e apresentações de forma organizada e profissional, utilizando recursos avançados para melhorar a qualidade do trabalho. 
-                        </p>
-                    </div>
-                </div>
+                    
+                </a>
             </div>
-        </div>
-        
-
-        <!-- high-max -->
-        <div id="high-max">
-            <h3>Projects</h3>
-            <section>
-                <div id="proj"><!--190-->
-                    <div>
-                        <iframe class="Yt" width="370" height="190" src="https://www.youtube.com/embed/SSj4P1TjMu8" title="Automação Web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-                        <h2 style="color:black;text-align: center;">Automação Web</h2>
-                        <p id="pog"class="text_proj">Este é um código desenvolvido em <strong>Python</strong> que possibilita a desinscrição de múltiplos canais no <strong>YouTube</strong> de forma prática e eficiente. Com ele, é possível gerenciar uma grande quantidade de canais que não são mais relevantes para você, simplificando o processo de gerenciamento de sua conta no <strong>YouTube</strong>. O código é fácil de utilizar e pode ser facilmente adaptado às suas necessidades específicas. Com essa ferramenta, você pode economizar tempo e esforço ao realizar tarefas repetitivas e focar em outras atividades importantes em sua rotina, com isso pode ser verificado no <a href="https://github.com/esmaaisk/desinscricoes_canais" target="_blank">repositorio</a>, os codigos utilizados.</p>
-                    </div>
-
-                    
-                    <div>
-                        <iframe class="Yt"id="Yt_"  width="370" height="190" src="https://www.youtube.com/embed/SUlRT7J2Jy8" title="My portfólio 1.0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        <h2 style="color:black;text-align: center;">Portifolio 1.0</h2>
-                        <p style="margin-left: 0.5cm;"class="text_proj">Embora tenha sido um marco em meu <strong>portfólio</strong>, meu primeiro projeto infelizmente não apresentou a responsividade desejada. Contudo, aprendi muito com essa experiência e estou determinado(a) a aprimorar minhas habilidades e conhecimentos em design responsivo para alcançar resultados ainda mais satisfatórios em projetos futuros.</p>
-                    </div>
-                    <div >
-                        <iframe class="Yt"width="370" height="190" src="https://www.youtube.com/embed/oKnHq0MrhDE" title="Análise De Dados" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        <h2 style="color:black;text-align: center;">Análise de dados</h2>
-                        <p id="text_proja"class="text_proj">Este projeto tem como objetivo utilizar a linguagem de programação <strong>Python</strong> para manipular diversos tipos de arquivos, incluindo o <strong>Excel</strong>, a fim de gerar uma ampla variedade de <strong>gráficos e planilhas</strong> sobre um determinado assunto. Com a utilização de bibliotecas especializadas, será possível <strong>automatizar tarefas repetitivas</strong> e obter resultados eficientes. Além disso, a <strong>análise de dados</strong> será realizada de forma rápida e confiável, permitindo a tomada de decisões baseadas em informações precisas e atualizadas.</p>
-                    </div>
-
-                    
-                    <div>
-                        <iframe class="Yt" width="370" height="190" src="https://www.youtube.com/embed/yCb055TsAVA" title="Calculadora" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        <h2 style="color:black;text-align: center;">Calculadora simples</h2>
-                        <p class="text_proj">Esta calculadora simples foi desenvolvida utilizando as tecnologias HTML5, CSS3 e JavaScript. Todos os códigos JavaScript foram devidamente documentados para facilitar a compreensão do código implementado. Você pode acessar o <a href="https://github.com/esmaaisk/calculadora" target="_blank">repositório</a> desta calculadora para verificar o código-fonte completo ou ver ele <a href="https://esmaaisk.github.io/calculadora/" target="_blank">ao vivo</a>.</p>
-                    </div>
-                    
-                </div>
-            </section>
-        </div>
+       </section>
+        <img class="imgK"src="Kaua.png" alt="O autor do projeto: Kauã Lucas">
+    
     </main>
-    <div id="void">
-        <h1 style="color:red">Erro!!</h1>
-        <p>Este site não e compativel com seu dispositivo. Este site funciona melhor  com telas acima de 316 de largura.<br>
-        por favor tentar entrar, em computadores, celulares com larguras melhor ou TV.
-        <br><br>
-        Ou você ativar o modo computador, no canto direito superior nos três pontos da sua tela  e rolar para baixo ate achar essa opção.
-    </p>
-    </div>
+    <footer class="rodaPe" >
+        <p class="rodaPe__text">Desenvolvido por Kauã Lucas</p>
+    </footer>
+    
 </body>
-
 </html>
