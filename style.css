@@ -1,0 +1,295 @@
+body {
+    margin: 0;
+    background: #594F7D;
+}
+
+.border-img{
+    height: 4.3cm;
+    margin-left: 5.9cm;
+    background:#38324d;
+    
+}
+#border-img0{
+    border-radius: 3cm 20px 0px 0px;
+}
+#border-img1{
+    border-radius: 0cm 0px 20px 20px;
+}
+
+section {
+    margin: -4px;
+    padding: 0;
+    width:30px;
+    position: relative;
+}
+
+div {
+    margin: 0;
+     width: 100%;
+
+}
+
+
+#conteudo{
+    background: #38324d;
+    height: 15cm;
+    margin-top: 30px;
+    margin-right: 5cm;
+    margin-left: -10cm;
+     border-radius: 20px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+ 
+    
+}
+.test{
+    display:flex;
+}
+.caixa-de-icone{
+margin-top:1cm;
+
+}
+span{
+    display: flex;
+    color: white;
+    justify-content: center;
+    
+    font-size: 16pt;
+    
+}
+h3{
+  
+    text-align:left;
+    font-size:14pt
+}
+
+#contato{
+display: flex;
+    
+}
+.p_name{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 1cm;
+    color: white;
+    font-size:14.5pt;
+    width:9.7cm;
+    line-height: 20px; 
+    
+}
+h2{
+    margin: 0;
+    margin-top:1cm;
+    font-size:15pt
+}
+.font{
+    text-align:left;
+    font-size:12pt;
+}
+#perfil_img{
+    height:6cm;
+    margin-top:1cm;
+    border-radius:1000px;
+    margin-left:1cm;
+    box-shadow: 30000000px;
+}
+#I{
+    display: flex;
+    flex-wrap: wrap;
+    width: 9cm;
+    text-align: center;
+    font-size: 12pt;
+}
+#img-text{
+    color:white;
+ 
+}
+.contato{
+    font-size:22pt;
+    text-align: center;
+    margin-left:-3cm;
+}
+#linkedin{
+    height: 2cm;
+    
+    
+}
+#github{
+    height: 1.5cm;
+    padding-top: 0.3cm;
+}
+.arquivo{
+    height: 6cm;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2cm;
+}
+#card,#Projetos{
+    color:white;
+    display:flex;
+    justify-content: center;
+    font-size:30pt;
+    margin:1cm 0cm 0px 0px;
+    background:#776ba3 ;
+    width: 10cm;
+    border-radius: 0px 20px 2cm 0px;
+}
+#html_text{
+    margin-left:-20cm;
+    margin-top: 2cm;
+    color:white;
+    width:12cm;
+    font-size:16pt;
+    
+}
+#css_text{
+    margin:1cm 2cm 0cm 0cm;
+    color:white;
+    width:14cm;
+    font-size:16pt;
+}
+#js_text{
+    color:white;
+    width:14cm;
+    font-size:16pt;
+}
+#arq,#arq1,#arq2{
+    cursor: pointer;
+}
+#but1{
+position: absolute;
+top:13.5cm;
+right:5.5cm
+}
+/* animation */ 
+#arq {
+    animation: loop 2.9s cubic-bezier(0.05, 1.27, 1, 1) infinite;
+  }
+
+  
+  @keyframes loop {
+    0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+  }
+  #arq1{
+      animation:loop 5s cubic-bezier(0.05, 1.27, 1, 1) infinite;
+  }
+  @keyframes loop1{
+      0%{
+          transform: translateY(10px);
+      }
+      50% {
+          transform: translateY(-40px);
+      }
+      100% {
+          transform: translateY(10px);
+      }
+      
+  }
+  #arq2{
+    animation: loop 7s cubic-bezier(0.05, 1.27, 1, 1) infinite;
+}
+@keyframes loop2{
+    0%{
+        transform: translateY(7px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(7px);
+    }
+    
+}
+#linked, #github{
+    animation: up 4s linear infinite;
+}
+@keyframes up{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+#pj{
+    animation: kep 2s linear infinite
+}@keyframes kep{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.border-img:hover{
+    cursor: pointer;
+}
+#but1:hover{
+    cursor: pointer;
+    
+}
+
+.lin{
+    font-size: 11pt;
+    margin-left:-0.5cm;
+    
+}
+#uln{
+    margin:0;
+    margin-top:0.5cm
+}
+.line{
+    position:relative;
+   right:1cm;
+    margin:0;
+    
+}
+#pj{
+    height: 8cm
+    
+}
+#pack_project{
+    display:flex; 
+    justify-content: center;
+}
+#text_pr{
+    color:white;
+    display:flex;
+    justify-content: center;
+    font-size:30pt;
+   
+    background:#776ba3 ;
+   width: 12cm;
+   margin-left: 7cm;
+    border-radius: 2cm;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.border-img {
+
+    transition: all 0.3s ease;
+  }
+  
+  .border-img:hover {
+    
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
